@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Atalho para formatar o código - Shift e Alt e F ao mesmo tempo -->
+    <h1>Formulários</h1>
+    <form action="registro.php" method="POST">
+            <div>
+
+                <label>Nome:</label>
+                <input type="text" name="nome">
+
+            </div>
+
+            <div>
+                <label for="idade">Idade:</label>
+                <input type="text" name="idade">
+            </div>
+            
+        <!-- Select -->
+
+        <div>
+            <label for="cidade">Selecione sua cidade:</label>
+            <select name="cidade">
+
+                <option value="São Paulo">São Paulo</option>
+                <option value="Taboão da Serra">Taboão da Serra</option>
+                <option value="Osasco" selected>Osasco</option>
+
+            </select>
+        </div>
+
+        <!-- Textarea -->
+         <div>
+
+            <label for="feedback">Descreva o seu feedback sobre o nosso site:</label>
+            <textarea name="feedback"></textarea>
+
+         </div>
+
+    <!-- Submit botão -->
+
+    <input type="submit" value="Enviar">
+
+    <!-- Password/Senha -->
+
+        <div>
+
+            <label for="senha">Senha:</label>
+            <input type="password" autocomplete="">
+
+        </div>
+
+        <!-- input E-mail -->
+
+        <div>
+
+            <label for="emailinserido">Inseira o seu e-mail</label>
+            <input type="email" name="emailinserido">
+
+        </div>
+
+        <div>
+
+            <label for="arquivo">Insira o seu currículo em PDF</label>
+            <input type="file" name="arquivo">
+
+        </div>
+
+        <div>   
+             <label for="genero">Qual o seu genero</label>
+        <div class="radio">
+
+            <input type="radio" value="feminino" name="genero">
+            <label for="faminino">Feminino</label>
+
+        </div>
+        </div>
+        
+        <div class="radio">
+
+            <input type="radio" value="Masculino" name="genero">
+            <label for="masculino">Masculino</label>
+
+        </div>
+
+        <div class="radio">
+
+            <input type="radio" value="naopinou" name="genero">
+            <label for="naopinou">Prefiro não resonder</label>
+
+        </div>
+
+        <!-- Input checkbox -->
+
+        <div>
+            <label for="linguasestrangeiras">Quais linguas pretende estudar:</label>
+
+            <div class="radio">
+
+                <input type="checkbox" name="linguasestrangeiras[]" value="ingles">
+                <label for="ingles">Inglês</label>
+
+            </div>
+
+           <div class="radio">
+
+                <input type="checkbox" name="linguasestrangeiras[]" value="espanhol">
+                <label for="espanhol">Espanhol</label>
+
+           </div>
+
+           <div class="radio">  
+                   
+            <input type="checkbox" name="linguasestrangeiras[]" value="alemão">
+            <label for="alemao">Alemão</label>
+
+           </div>
+        </div>
+
+        <!-- input data -->
+
+        <div>
+            <label for="data">Data de nascimento:</label>
+            <input type="datetime-local" name="datanascimento">
+        </div>
+
+        <!-- input number -->
+
+        <div>
+            
+            <label for="certificados">Quantos certificados você possui?</label>
+            <input type="number" name="certificados">
+
+        </div>
+
+        <!-- Atributo Placeholder -->
+
+        <div>
+            <label for="pesquisa">Como achou o nosso site?</label>
+            <input type="text" name="pesquisa" placeholder="No google ou instagram ">
+        </div>
+
+        <!-- Atributo Required -->
+
+        <div>
+            <input type="text" name="sobrenome" placeholder="Sobrenome" required>
+        </div>
+
+        <!-- Submit botão -->
+         <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
